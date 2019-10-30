@@ -3,6 +3,31 @@
     src: url(fonts/Feijoa\ Display.otf);
 }
 
+@font-face {
+    font-family: 'SofiaPro-medium';
+    src: url(fonts/SofiaPro/SofiaProMedium.ttf);
+}
+
+@font-face {
+    font-family: 'SofiaPro-regular';
+    src: url(fonts/SofiaPro/SofiaProRegular.ttf);
+}
+
+@font-face {
+    font-family: 'SofiaPro-semibold';
+    src: url(fonts/SofiaPro/SofiaProSemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'SofiaPro-light';
+    src: url(fonts/SofiaPro/SofiaProLight.ttf);
+}
+
+@font-face {
+    font-family: 'SofiaPro-extralight';
+    src: url(fonts/SofiaPro/SofiaProExtraLight.ttf);
+}
+
 @keyframes transparent {
     0% {
         opacity: 0;
@@ -19,397 +44,443 @@
 }
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-light', sans-serif;
     color: #404040;
-    font-weight: 300;
 }
 
 @media only screen and (min-width:1441px){
 
-h1 {
-    Font-Family: 'Feijoa';
-    font-size: 55px;
-    font-weight: 200;
-}
-
-h2 {
-    font-family: 'Muli', sans-serif;
-    font-size: 45px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-family: 'Muli', sans-serif;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-h4 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-}
-
-p {
-    font-size: 22px;
-    line-height: 1.4;
-}
-
-header {
-    background-image: url(images/img-header-v3-1440.svg);
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100vw;
-    padding-bottom: 0.5%;
-}
-
-nav {
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-    z-index: 200;
-}
-
-.menu {
-    width: 30%;
-    margin-left: 60%;
-}
-
-.menu-items {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #404040
-}
-
-.menu-items a {
-    color: #404040;
-    text-decoration: none;
-}
-
-.menu-items a:hover {
-    color: #C27166;
-}
-
-.intro-portfolio {
-    width: 45%;
-    padding-top: 12%;
-    margin-left: 8%;
-    margin-bottom: 15%;
-}
-
-#cargo {
-    margin-top: 3%;
-    position: relative;
-    z-index: 1;
-}
-
-#cargo h3:after {
-    content:'';
-    position: absolute;
-    background-color: #E5BBA5;
-    width: 70%;
-    height: 20px;
-    bottom: 0;
-    left:0;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-#cargo h3:hover::after {
-    opacity: 0.7;
-    transition: 1s;
-}
-
-#presentacion {
-    margin-top: 3%;
-}
-
-#presentacion p {
-    font-size: 30px;
-    font-weight: 300;
-}
-
-#rrss {
-    width: 35%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#rrss i {
-    color: #404040;
-    font-size: 30px;
-}
-
-#rrss i:hover {
-    color: #C27166;
-}
-
-#intro-proyectos {
-    width: 80vw;
-    position: relative;
-    background-color: #F0C8B2;
-    padding: 4% 10% 4% 10%;
-    color: #ffffff;
-    z-index: 100;
-}
-
-.background-proyectos {
-    width: 100vw;
-    background-color: #f6f2f0;
-    margin-top: -8%;
-}
-
-#proyecto-1 {
-    padding-top: 15%;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-#proyecto-2 {
-    padding-top: 2%;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-#proyecto-3 {
-    padding-top: 2%;
-    padding-bottom: 5%;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.imagen-proyecto {
-    width: 50%;
-}
-
-.imagen-proyecto img {
-    width: 100%;
-}
-
-.texto-proyecto {
-    width: 50%;
-    padding-top: 5%;
-    margin-left: 5%;
-    z-index: 1;
-}
-
-.texto-proyecto h2 {
-    position: relative;
-}
-
-.texto-proyecto h2:after {
-    content:'';
-    position: absolute;
-    background-color: #E5BBA5;
-    width: 40%;
-    height: 30px;
-    bottom: 0;
-    left:0;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-.texto-proyecto h2:hover:after {
-    width: 75%;
-    transition: 0.5s ease;
-}
-
-.texto-proyecto h4 {
-    margin-top: 3%;
-    text-transform: uppercase;
-}
-
-.texto-proyecto p {
-    margin-top: 3%;
-    font-size: 22px;
-}
-
-.texto-proyecto button {
-    background-color: #C27166;
-    border-style: solid;
-    border-color: #C27166;
-    border-width: 2px;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 4%;
-    margin-top: 51px;
-    cursor: pointer;
-}
-
-.texto-proyecto button:hover {
-    background-color: #f6f2f0;
-    border-style: solid;
-    border-color: #C27166;
-    border-width: 2px;
-    color: #404040;
-}
-
-.about {
-    width: 100vw;
-    background-color: #E5BBA5;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-#about-texto {
-    width: 40%;
-    padding: 5%;
-    color: #ffffff;
-}
-
-#about-texto h2 {
-    font-family: 'Feijoa';
-    text-transform: none;
-}
-
-#about-texto p {
-    margin-top: 5%;
-}
-
-#about-img {
-    width: 40%;
-    object-fit: cover;
-    object-position: center;
-}
-
-footer {
-    width: 100vw;
-    background-color: #f6f2f0;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.footer-elements-1 {
-    width: 40%;
-    padding-left: 5%;
-}
-
-.texto h2 {
-    font-family: 'Feijoa';
-    text-transform: none;
-}
-
-.footer-elements-2 {
-    width: 40%;
-    display: flex;
-    flex-flow: column;
-}
-
-.boton {
-    width: 90%;
-}
-
-.boton button {
-    background-color: #C27166;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
-    padding: 3%;
-    border-width: 2px;
-    border-color: #C27166;
-    cursor: pointer;
-}
-
-.boton button:hover {
-    background-color: #f6f2f0;
-    border-style: solid;
-    border-color: #C27166;
-    border-width: 2px;
-    color: #404040;
-}
-
-.rrss {
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 4%;
-}
-
-.rrss i {
-    color: #404040;
-    font-size: 26px;
-}
-
-.rrss i:hover {
-    color: #C27166;
-}
-
-#cv {
-    width: 28%;
-    padding-top: 4%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#cv a{
-    color: #404040;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#cv a:hover{
-    color: #C27166;
-}
-
-}
+    h1 {
+        Font-Family: 'SofiaPro-regular';
+        font-size: 55px;
+    }
+    
+    h2 {
+        font-family: 'SofiaPro-extralight';
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-family: 'SofiaPro-light';
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    h4 {
+        font-family: 'SofiaPro-light';
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    
+    header {
+        background-image: url(images/img-header-v3-1440.svg);
+        background-color: #ffffff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 100vw;
+        padding-bottom: 0.5%;
+        padding-top: 5%;
+    }
+    
+    nav {
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        position: fixed;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 200;
+    }
+    
+    .menu {
+        width: 30%;
+        margin-left: 60%;
+    }
+    
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #404040
+    }
+    
+    .menu-items a {
+        color: #404040;
+        text-decoration: none;
+    }
+    
+    .menu-items a:hover {
+        color: #C27166;
+    }
+    
+    .intro-portfolio {
+        width: 45%;
+        padding-top: 12%;
+        margin-left: 8%;
+        margin-bottom: 15%;
+    }
+    
+    #cargo {
+        margin-top: 4%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    #cargo h3:after {
+        content:'';
+        position: absolute;
+        background-color: #E5BBA5;
+        width: 70%;
+        height: 20px;
+        bottom: 0;
+        left:0;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    
+    #cargo h3:hover::after {
+        opacity: 0.7;
+        transition: 1s;
+    }
+    
+    #presentacion {
+        margin-top: 4%;
+    }
+    
+    #presentacion p {
+        font-size: 28px;
+    }
+    
+    #rrss {
+        width: 35%;
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #rrss i {
+        color: #404040;
+        font-size: 30px;
+    }
+    
+    #rrss i:hover {
+        color: #C27166;
+    }
+    
+    #intro-proyectos {
+        width: 85vw;
+        position: relative;
+        background-color: #F0C8B2;
+        padding: 4% 5% 4% 8%;
+        color: #ffffff;
+        z-index: 100;
+    }
+    
+    #intro-proyectos h2 {
+        font-family: 'SofiaPro-medium';
+    }
+    
+    #intro-proyectos p {
+        margin-top: 2%;
+    }
+    
+    .background-proyectos {
+        width: 100vw;
+        background-color: #ffffff;
+        margin-top: -8%;
+    }
+    
+    #proyecto-1 {
+        padding-top: 15%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #proyecto-2 {
+        padding-top: 2%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #proyecto-3 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .imagen-proyecto {
+        width: 55%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .imagen-proyecto img {
+        width: 100%;
+    }
+    
+    .texto-proyecto {
+        width: 45%;
+        padding-top: 7%;
+        margin-left: 5%;
+        margin-right: 2%;
+        z-index: 1;
+    }
+    
+    .texto-proyecto h2 {
+        position: relative;
+    }
+    
+    .texto-proyecto h2:after {
+        content:'';
+        position: absolute;
+        background-color: #E5BBA5;
+        width: 40%;
+        height: 30px;
+        bottom: 0;
+        left:0;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    
+    .texto-proyecto h2:hover:after {
+        width: 55%;
+        transition: 0.5s ease;
+    }
+    
+    .texto-proyecto h4 {
+        margin-top: 4%;
+        text-transform: uppercase;
+    }
+    
+    .texto-proyecto p {
+        margin-top: 3%;
+        font-size: 22px;
+    }
+    
+    .texto-proyecto button {
+        background-color: #C27166;
+        border-style: solid;
+        border-color: #C27166;
+        border-width: 2px;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 4%;
+        margin-top: 51px;
+        cursor: pointer;
+    }
+    
+    .texto-proyecto button:hover {
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #C27166;
+        border-width: 2px;
+        color: #404040;
+    }
+    
+    #treen-button {
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #C27166;
+        border-width: 2px;
+        color: #404040;  
+    }
+    
+    #ahora-button {
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #C27166;
+        border-width: 2px;
+        color: #404040;  
+    }
+    
+    .about {
+        width: 100vw;
+        background-color: #E5BBA5;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    #about-texto {
+        width: 60%;
+        color: #ffffff;
+        margin-left: 8%;
+        margin-top: 3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    
+    #about-texto h2 {
+        font-family: 'SofiaPro-medium';
+        text-transform: none;
+        margin-top: 2%;
+    }
+    
+    #about-texto p {
+        margin-top: 5%;
+    }
+    
+    #about-img {
+        width: 40%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 3%;
+        margin-right: 3%;
+    }
+    
+    .skills {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-left: 8%;
+    }
+    
+    .skills h2 {
+        font-family: 'SofiaPro-medium';
+        text-transform: none;
+        font-size: 34px;
+    }
+    
+    #list-skills {
+        margin-top: 4%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #list-skills p {
+        margin-top: 3%;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    
+    #skills-research {
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    #skills-focus {
+        width: 30%;
+        margin-right: 5%;
+    }
+    
+    #skills-storytelling {
+        width: 30%;
+    }
+    
+    footer {
+        width: 100vw;
+        background-color: #C27166;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .footer-elements-1 {
+        width: 40%;
+    }
+    
+    .texto h2 {
+        font-family: 'SofiaPro-medium';
+        text-transform: none;
+        color: #ffffff;
+        margin-left: 8%;
+    }
+    
+    .footer-elements-2 {
+        width: 40%;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    #email a{
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    #email a:hover{
+        color: #404040;
+    }
+    
+    .rrss {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4%;
+    }
+    
+    .rrss i {
+        color: #ffffff;
+        font-size: 26px;
+    }
+    
+    .rrss i:hover {
+        color: #404040;
+    }
+    
+    #cv {
+        width: 28%;
+        padding-top: 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #cv a{
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    #cv a:hover{
+        color: #404040;
+    }
+    }
 
 @media only screen and (min-width:1025px) and (max-width:1440px){
 
 h1 {
-    Font-Family: 'Feijoa';
+    Font-Family: 'SofiaPro-regular';
     font-size: 55px;
-    font-weight: 200;
 }
 
 h2 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-extralight';
     font-size: 45px;
-    font-weight: 300;
-    text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-light';
     font-size: 30px;
-    font-weight: 200;
     text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
+    font-family: 'SofiaPro-light';
     font-size: 25px;
 }
 
 p {
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 header {
@@ -465,7 +536,7 @@ nav {
 }
 
 #cargo {
-    margin-top: 3%;
+    margin-top: 4%;
     position: relative;
     z-index: 1;
 }
@@ -488,12 +559,11 @@ nav {
 }
 
 #presentacion {
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 #presentacion p {
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 28px;
 }
 
 #rrss {
@@ -513,17 +583,25 @@ nav {
 }
 
 #intro-proyectos {
-    width: 80vw;
+    width: 85vw;
     position: relative;
     background-color: #F0C8B2;
-    padding: 4% 10% 4% 10%;
+    padding: 4% 5% 4% 8%;
     color: #ffffff;
     z-index: 100;
 }
 
+#intro-proyectos h2 {
+    font-family: 'SofiaPro-medium';
+}
+
+#intro-proyectos p {
+    margin-top: 2%;
+}
+
 .background-proyectos {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #ffffff;
     margin-top: -8%;
 }
 
@@ -553,7 +631,9 @@ nav {
 }
 
 .imagen-proyecto {
-    width: 50%;
+    width: 55%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .imagen-proyecto img {
@@ -561,9 +641,10 @@ nav {
 }
 
 .texto-proyecto {
-    width: 50%;
-    padding-top: 5%;
+    width: 45%;
+    padding-top: 7%;
     margin-left: 5%;
+    margin-right: 2%;
     z-index: 1;
 }
 
@@ -584,12 +665,12 @@ nav {
 }
 
 .texto-proyecto h2:hover:after {
-    width: 75%;
+    width: 55%;
     transition: 0.5s ease;
 }
 
 .texto-proyecto h4 {
-    margin-top: 3%;
+    margin-top: 4%;
     text-transform: uppercase;
 }
 
@@ -614,11 +695,27 @@ nav {
 }
 
 .texto-proyecto button:hover {
-    background-color: #f6f2f0;
+    background-color: #ffffff;
     border-style: solid;
     border-color: #C27166;
     border-width: 2px;
     color: #404040;
+}
+
+#treen-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
+#ahora-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
 }
 
 .about {
@@ -631,14 +728,18 @@ nav {
 }
 
 #about-texto {
-    width: 40%;
-    padding: 5%;
+    width: 60%;
     color: #ffffff;
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
 }
 
 #about-texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
+    margin-top: 2%;
 }
 
 #about-texto p {
@@ -649,11 +750,51 @@ nav {
     width: 40%;
     object-fit: cover;
     object-position: center;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 8%;
+}
+
+.skills h2 {
+    font-family: 'SofiaPro-medium';
+    text-transform: none;
+    font-size: 34px;
+}
+
+#list-skills {
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#list-skills p {
+    margin-top: 3%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#skills-research {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#skills-focus {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#skills-storytelling {
+    width: 30%;
 }
 
 footer {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #C27166;
     display: flex;
     justify-content: space-around;
     padding-top: 5%;
@@ -662,12 +803,13 @@ footer {
 
 .footer-elements-1 {
     width: 40%;
-    padding-left: 5%;
 }
 
 .texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
+    color: #ffffff;
+    margin-left: 8%;
 }
 
 .footer-elements-2 {
@@ -676,27 +818,13 @@ footer {
     flex-flow: column;
 }
 
-.boton {
-    width: 90%;
-}
-
-.boton button {
-    background-color: #C27166;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+#email a{
     color: #ffffff;
-    padding: 3%;
-    border-width: 2px;
-    border-color: #C27166;
-    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.boton button:hover {
-    background-color: #f6f2f0;
-    border-style: solid;
-    border-color: #C27166;
-    border-width: 2px;
+#email a:hover{
     color: #404040;
 }
 
@@ -708,12 +836,12 @@ footer {
 }
 
 .rrss i {
-    color: #404040;
+    color: #ffffff;
     font-size: 26px;
 }
 
 .rrss i:hover {
-    color: #C27166;
+    color: #404040;
 }
 
 #cv {
@@ -724,13 +852,13 @@ footer {
 }
 
 #cv a{
-    color: #404040;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 #cv a:hover{
-    color: #C27166;
+    color: #404040;
 }
 }
 
@@ -738,34 +866,29 @@ footer {
 @media only screen and (min-width:769px) and (max-width:1024px){
 
 h1 {
-    Font-Family: 'Feijoa';
+    Font-Family: 'SofiaPro-regular';
     font-size: 50px;
-    font-weight: 200;
 }
 
 h2 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-extralight';
     font-size: 40px;
-    font-weight: 300;
-    text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-light';
     font-size: 28px;
-    font-weight: 200;
     text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
+    font-family: 'SofiaPro-light';
     font-size: 23px;
 }
 
 p {
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 header {
@@ -820,7 +943,7 @@ nav {
 }
 
 #cargo {
-    margin-top: 3%;
+    margin-top: 4%;
     position: relative;
     z-index: 1;
 }
@@ -838,12 +961,11 @@ nav {
 }
 
 #presentacion {
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 #presentacion p {
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 28px;
 }
 
 #rrss {
@@ -863,7 +985,7 @@ nav {
 }
 
 #intro-proyectos {
-    width: 80vw;
+    width: 85vw;
     position: relative;
     background-color: #F0C8B2;
     padding: 3% 9% 3% 9%;
@@ -871,9 +993,17 @@ nav {
     z-index: 100;
 }
 
+#intro-proyectos h2 {
+    font-family: 'SofiaPro-medium';
+}
+
+#intro-proyectos p {
+    margin-top: 2%;
+}
+
 .background-proyectos {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #ffffff;
     margin-top: -8%;
 }
 
@@ -904,6 +1034,8 @@ nav {
 
 .imagen-proyecto {
     width: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .imagen-proyecto img {
@@ -912,7 +1044,7 @@ nav {
 
 .texto-proyecto {
     width: 50%;
-    padding-top: 2.5%;
+    padding-top: 3%;
     margin-left: 5%;
     z-index: 1;
 }
@@ -965,6 +1097,22 @@ nav {
     color: #404040;
 }
 
+#treen-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
+#ahora-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
 .about {
     width: 100%;
     background-color: #E5BBA5;
@@ -981,9 +1129,9 @@ nav {
 }
 
 #about-texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 32px;
+    margin-top: 2%;
 }
 
 #about-texto p {
@@ -1000,9 +1148,47 @@ nav {
     object-position: center; 
 }
 
+.skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 8%;
+}
+
+.skills h2 {
+    font-family: 'SofiaPro-medium';
+    text-transform: none;
+    font-size: 34px;
+}
+
+#list-skills {
+    margin-top: 4%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#list-skills p {
+    margin-top: 3%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#skills-research {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#skills-focus {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#skills-storytelling {
+    width: 30%;
+}
+
 footer {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #C27166;
     display: flex;
     justify-content: space-around;
     padding-top: 5%;
@@ -1015,9 +1201,9 @@ footer {
 }
 
 .texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 32px;
+    color: #ffffff;
 }
 
 .footer-elements-2 {
@@ -1026,27 +1212,13 @@ footer {
     flex-flow: column;
 }
 
-.boton {
-    width: 90%;
-}
-
-.boton button {
-    background-color: #C27166;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+#email a{
     color: #ffffff;
-    padding: 3%;
-    border-width: 2px;
-    border-color: #C27166;
-    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.boton button:hover {
-    background-color: #f6f2f0;
-    border-style: solid;
-    border-color: #C27166;
-    border-width: 2px;
+#email a:hover{
     color: #404040;
 }
 
@@ -1058,12 +1230,12 @@ footer {
 }
 
 .rrss i {
-    color: #404040;
+    color: #ffffff;
     font-size: 26px;
 }
 
 .rrss i:hover {
-    color: #C27166;
+    color: #404040;
 }
 
 #cv {
@@ -1074,46 +1246,40 @@ footer {
 }
 
 #cv a{
-    color: #404040;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 #cv a:hover{
-    color: #C27166;
+    color: #404040;
 }
 }
 
 @media only screen and (min-width:415px) and (max-width:768px){
 h1 {
-    Font-Family: 'Feijoa';
-    font-size: 39px;
-    font-weight: 200;
+    Font-Family: 'SofiaPro-regular';
+    font-size: 46px;
 }
 
 h2 {
-    font-family: 'Muli', sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-family: 'SofiaPro-extralight';
+    font-size: 40px;
 }
 
 h3 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-light';
     font-size: 24px;
-    font-weight: 200;
-    text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
+    font-family: 'SofiaPro-light';
     font-size: 22px;
 }
 
 p {
-    font-size: 21px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 header {
@@ -1178,7 +1344,7 @@ nav {
     content:'';
     position: absolute;
     background-color: #E5BBA5;
-    width: 100%;
+    width: 80%;
     height: 17px;
     bottom: 0;
     left:0;
@@ -1192,7 +1358,6 @@ nav {
 
 #presentacion p {
     font-size: 22px;
-    font-weight: 300;
 }
 
 #rrss {
@@ -1218,9 +1383,17 @@ nav {
     color: #ffffff;
 }
 
+#intro-proyectos h2 {
+    font-family: 'SofiaPro-medium';
+}
+
+#intro-proyectos p {
+    margin-top: 2%;
+}
+
 .background-proyectos {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #ffffff;
 }
 
 #proyecto-1 {
@@ -1250,7 +1423,7 @@ nav {
 }
 
 .imagen-proyecto img {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1286,7 +1459,7 @@ nav {
 
 .texto-proyecto p {
     margin-top: 3%;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .texto-proyecto button {
@@ -1305,6 +1478,22 @@ nav {
     margin-top: 4%;
 }
 
+#treen-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
+#ahora-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
 .about {
     width: 100vw;
     background-color: #E5BBA5;
@@ -1316,14 +1505,14 @@ nav {
 
 #about-texto {
     width: 100%;
-    padding: 10% 20% 10% 20%; 
+    padding: 10% 10% 10% 10%; 
     color: #ffffff;
 }
 
 #about-texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 46px;
+    font-size: 44px;
 }
 
 #about-texto p {
@@ -1336,14 +1525,52 @@ nav {
 }
 
 #about-img img{
-    width: 90%;
+    width: 95%;
     object-fit: cover;
     object-position: center; 
 }
 
+.skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 8%;
+}
+
+.skills h2 {
+    font-family: 'SofiaPro-medium';
+    text-transform: none;
+    font-size: 26px;
+}
+
+#list-skills {
+    margin-top: 4%;
+    display: flex;
+    flex-flow: column;
+}
+
+#list-skills p {
+    margin-top: 3%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#skills-research {
+    width: 95%;
+}
+
+#skills-focus {
+    width: 95%;
+    margin-top: 5%;
+}
+
+#skills-storytelling {
+    width: 95%;
+    margin-top: 5%;
+}
+
 footer {
     width: 100%;
-    background-color: #f6f2f0;
+    background-color: #C27166;
     padding: 8% 2% 8% 2%;
     display: flex;
     flex-flow: column;
@@ -1351,9 +1578,10 @@ footer {
 }
 
 .texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 46px;
+    color: #ffffff;
+    font-size: 44px;
 }
 
 .texto {
@@ -1367,22 +1595,14 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-}
-
-.boton {
-    width: 100%;
     margin-top: 5%;
-    text-align: center;
 }
 
-.boton button {
-    background-color: #C27166;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+#email a{
     color: #ffffff;
-    padding: 5%;
-    border: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
 .rrss {
@@ -1393,7 +1613,7 @@ footer {
 }
 
 .rrss i {
-    color: #404040;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -1405,50 +1625,43 @@ footer {
 }
 
 #cv a{
-    color: #404040;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     font-size: 22px;
 }
 
-#cv a:hover{
-    color: #C27166;
-}
 }
 
 
 @media only screen and (max-width:414px){
  
 h1 {
-    Font-Family: 'Feijoa';
+    Font-Family: 'SofiaPro-regular';
     font-size: 35px;
-    font-weight: 200;
 }
 
 h2 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-extralight';
     font-size: 25px;
-    font-weight: 300;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Muli', sans-serif;
+    font-family: 'SofiaPro-light';
     font-size: 20px;
-    font-weight: 200;
     text-transform: uppercase;
 }
 
 h4 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 300;
+    font-family: 'SofiaPro-light';
     font-size: 18px;
 }
 
 p {
     font-size: 19px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 header {
@@ -1548,13 +1761,21 @@ nav {
 #intro-proyectos {
     width: 100vw;
     background-color: #F0C8B2;
-    padding: 4% 10% 4% 10%;
+    padding: 8% 10% 8% 10%;
     color: #ffffff;
+}
+
+#intro-proyectos h2 {
+    font-family: 'SofiaPro-medium';
+}
+
+#intro-proyectos p {
+    margin-top: 4%;
 }
 
 .background-proyectos {
     width: 100vw;
-    background-color: #f6f2f0;
+    background-color: #ffffff;
 }
 
 #proyecto-1 {
@@ -1584,7 +1805,7 @@ nav {
 }
 
 .imagen-proyecto img {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1605,7 +1826,7 @@ nav {
     position: absolute;
     background-color: #E5BBA5;
     width: 60%;
-    height: 30px;
+    height: 25px;
     bottom: 0;
     left:0;
     z-index: -1;
@@ -1615,6 +1836,7 @@ nav {
 .texto-proyecto h4 {
     margin-top: 3%;
     text-transform: uppercase;
+    font-size: 22px;
 }
 
 .texto-proyecto p {
@@ -1638,23 +1860,39 @@ nav {
     margin-top: 4%;
 }
 
+#treen-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
+#ahora-button {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #C27166;
+    border-width: 2px;
+    color: #404040;  
+}
+
 .about {
     width: 100vw;
     background-color: #E5BBA5;
     display: flex;
     flex-flow: column;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 #about-texto {
     width: 100%;
-    padding: 10% 20% 10% 20%; 
+    padding: 10% 10% 10% 10%; 
     color: #ffffff;
 }
 
 #about-texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
     font-size: 35px;
 }
@@ -1669,14 +1907,53 @@ nav {
 }
 
 #about-img img{
-    width: 90%;
+    width: 95%;
     object-fit: cover;
     object-position: center; 
 }
 
+.skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 8%;
+}
+
+.skills h2 {
+    font-family: 'SofiaPro-medium';
+    text-transform: none;
+    font-size: 26px;
+}
+
+#list-skills {
+    margin-top: 4%;
+    display: flex;
+    flex-flow: column;
+}
+
+#list-skills p {
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#skills-research {
+    width: 95%;
+    margin-top: 6%;
+}
+
+#skills-focus {
+    width: 95%;
+    margin-top: 6%;
+}
+
+#skills-storytelling {
+    width: 95%;
+    margin-top: 6%;
+}
+
 footer {
     width: 100%;
-    background-color: #f6f2f0;
+    background-color: #C27166;
     padding: 8% 2% 8% 2%;
     display: flex;
     flex-flow: column;
@@ -1684,12 +1961,14 @@ footer {
 }
 
 .texto h2 {
-    font-family: 'Feijoa';
+    font-family: 'SofiaPro-medium';
     text-transform: none;
+    color: #ffffff;
+    font-size: 35px; 
 }
 
 .texto {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1699,22 +1978,14 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 5%;
 }
 
-.boton {
-    width: 100%;
-    margin-top: 8%;
-    text-align: center;
-}
-
-.boton button {
-    background-color: #C27166;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+#email a{
     color: #ffffff;
-    padding: 5%;
-    border: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 .rrss {
@@ -1725,7 +1996,7 @@ footer {
 }
 
 .rrss i {
-    color: #404040;
+    color: #ffffff;
     font-size: 26px;
 }
 
@@ -1737,15 +2008,13 @@ footer {
 }
 
 #cv a{
-    color: #404040;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    font-size: 18px;
 }
 
-#cv a:hover{
-    color: #C27166;
-}
 
 }
 
