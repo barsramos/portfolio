@@ -468,6 +468,7 @@ body {
 .intro-proyecto-interior {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .ficha-datos-proyecto {
@@ -1079,6 +1080,7 @@ footer {
 .intro-proyecto-interior {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .ficha-datos-proyecto {
