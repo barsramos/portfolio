@@ -204,6 +204,7 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     
     #proyecto-2 {
@@ -212,6 +213,7 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     
     #proyecto-3 {
@@ -221,6 +223,7 @@ body {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     
     .imagen-proyecto {
@@ -235,7 +238,6 @@ body {
     
     .texto-proyecto {
         width: 45%;
-        padding-top: 7%;
         margin-left: 5%;
         margin-right: 2%;
         z-index: 1;
@@ -316,6 +318,7 @@ body {
         background-color: #E5BBA5;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         padding-top: 2%;
         padding-bottom: 2%;
     }
@@ -604,8 +607,9 @@ body {
 
 
 .texto-flujos-proyecto {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    margin-top: 15%;
 }
 
 .texto-flujos-proyecto h4 {
@@ -621,16 +625,19 @@ body {
 #flujos-proyecto-1 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #flujos-proyecto-2 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #flujos-proyecto-3 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .user-journey-scenario {
@@ -808,6 +815,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #proyecto-2 {
@@ -816,6 +824,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #proyecto-3 {
@@ -825,6 +834,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .imagen-proyecto {
@@ -839,7 +849,6 @@ nav {
 
 .texto-proyecto {
     width: 45%;
-    padding-top: 7%;
     margin-left: 5%;
     margin-right: 2%;
     z-index: 1;
@@ -920,6 +929,7 @@ nav {
     background-color: #E5BBA5;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -1209,8 +1219,9 @@ footer {
 
 
 .texto-flujos-proyecto {
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    margin-top: 15%;
 }
 
 .texto-flujos-proyecto h4 {
@@ -1226,16 +1237,19 @@ footer {
 #flujos-proyecto-1 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #flujos-proyecto-2 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #flujos-proyecto-3 {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .user-journey-scenario {
@@ -1411,6 +1425,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #proyecto-2 {
@@ -1419,6 +1434,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #proyecto-3 {
@@ -1428,6 +1444,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .imagen-proyecto {
@@ -1442,7 +1459,6 @@ nav {
 
 .texto-proyecto {
     width: 50%;
-    padding-top: 3%;
     margin-left: 5%;
     z-index: 1;
 }
