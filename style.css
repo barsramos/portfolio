@@ -453,7 +453,203 @@ body {
     #cv a:hover{
         color: #404040;
     }
-    }
+
+/* Páginas de proyectos */
+
+.presentacion-proyecto-interior img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-proyecto-interior {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ficha-datos-proyecto {
+    width: 30%;
+    background-color: #C27166;
+    padding: 3%;
+    color: #ffffff;
+    margin: 4%;
+}
+
+.ficha-datos-proyecto h3 {
+    text-transform: none;
+    margin-bottom: 2%;
+    font-family: 'SofiaPro-semibold';
+}
+
+.reto-proyecto {
+    width: 60%;
+    margin: 6%;
+    vertical-align: middle;
+}
+
+.reto-proyecto p {
+    font-family: 'SofiaPro-semibold';
+    font-size: 26px;
+}
+
+.desarrollo-proyecto {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.desarrollo-proyecto img {
+    width: 100%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+
+}
+
+.desarrollo-proyecto h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.desarrollo-proyecto h2:after {
+    content:'';
+    position: absolute;
+    background-color: #E5BBA5;
+    width: 57%;
+    height: 25px;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.desarrollo-proyecto h2:hover:after {
+    width: 60%;
+    transition: 0.5s ease;
+}
+
+.datos-investigacion-proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+
+.datos-investigacion-proyecto h3 {
+    color: #C27166;
+    text-transform: none;
+    font-family: 'SofiaPro-semibold';
+}
+
+.datos-investigacion-proyecto p {
+    margin-top: 2%;
+}
+
+.dato-investigacion-1 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-2 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-3 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.definicion-problemas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.problema {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.problema h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+
+}
+
+.problema-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.problema-usabilidad {
+    background-color: #f7f7f7;
+    padding: 4%;
+}
+
+.problema-usabilidad h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+}
+
+.flujos-proyecto img {
+    width: 45%;
+}
+
+
+.texto-flujos-proyecto {
+    width: 50%;
+    margin-top: 15%;
+}
+
+.texto-flujos-proyecto h4 {
+    font-family: 'SofiaPro-semibold';
+    font-size: 36px;
+    color: #C27166;
+}
+
+.texto-flujos-proyecto p {
+    margin-top: 3%;
+}
+
+#flujos-proyecto-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flujos-proyecto-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flujos-proyecto-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-journey-scenario {
+    display: flex;
+    flex-direction: column;
+}
+.user-journey-scenario img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-persona-ahora img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
 
 @media only screen and (min-width:1025px) and (max-width:1440px){
 
@@ -483,7 +679,7 @@ p {
     line-height: 1.5;
 }
 
-header {
+.header-home {
     background-image: url(images/img-header-v3-1440.svg);
     background-color: #ffffff;
     background-position: center;
@@ -860,6 +1056,203 @@ footer {
 #cv a:hover{
     color: #404040;
 }
+
+/* Páginas de proyectos */
+
+.presentacion-proyecto-interior img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-proyecto-interior {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ficha-datos-proyecto {
+    width: 30%;
+    background-color: #C27166;
+    padding: 3%;
+    color: #ffffff;
+    margin: 4%;
+}
+
+.ficha-datos-proyecto h3 {
+    text-transform: none;
+    margin-bottom: 2%;
+    font-family: 'SofiaPro-semibold';
+}
+
+.reto-proyecto {
+    width: 60%;
+    margin: 6%;
+    vertical-align: middle;
+}
+
+.reto-proyecto p {
+    font-family: 'SofiaPro-semibold';
+    font-size: 26px;
+}
+
+.desarrollo-proyecto {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.desarrollo-proyecto img {
+    width: 100%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+
+}
+
+.desarrollo-proyecto h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.desarrollo-proyecto h2:after {
+    content:'';
+    position: absolute;
+    background-color: #E5BBA5;
+    width: 57%;
+    height: 25px;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.desarrollo-proyecto h2:hover:after {
+    width: 60%;
+    transition: 0.5s ease;
+}
+
+.datos-investigacion-proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+
+.datos-investigacion-proyecto h3 {
+    color: #C27166;
+    text-transform: none;
+    font-family: 'SofiaPro-semibold';
+}
+
+.datos-investigacion-proyecto p {
+    margin-top: 2%;
+}
+
+.dato-investigacion-1 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-2 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-3 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.definicion-problemas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.problema {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.problema h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+
+}
+
+.problema-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.problema-usabilidad {
+    background-color: #f7f7f7;
+    padding: 4%;
+}
+
+.problema-usabilidad h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+}
+
+.flujos-proyecto img {
+    width: 45%;
+}
+
+
+.texto-flujos-proyecto {
+    width: 50%;
+    margin-top: 15%;
+}
+
+.texto-flujos-proyecto h4 {
+    font-family: 'SofiaPro-semibold';
+    font-size: 36px;
+    color: #C27166;
+}
+
+.texto-flujos-proyecto p {
+    margin-top: 3%;
+}
+
+#flujos-proyecto-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flujos-proyecto-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flujos-proyecto-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-journey-scenario {
+    display: flex;
+    flex-direction: column;
+}
+.user-journey-scenario img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-persona-ahora img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 
