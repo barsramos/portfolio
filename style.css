@@ -599,6 +599,7 @@ body {
 
 .flujos-proyecto img {
     width: 45%;
+    object-fit: contain;
 }
 
 
@@ -1203,7 +1204,7 @@ footer {
 
 .flujos-proyecto img {
     width: 45%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
