@@ -1104,6 +1104,7 @@ footer {
     width: 100%;
     margin-top: 3.5%;
     margin-bottom: 3.5%;
+    object-fit: cover;
 
 }
 
@@ -1202,6 +1203,7 @@ footer {
 
 .flujos-proyecto img {
     width: 45%;
+    object-fit: cover;
 }
 
 
@@ -1244,6 +1246,7 @@ footer {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 
 #user-persona-ahora img {
@@ -1251,6 +1254,7 @@ footer {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 
 }
