@@ -1286,26 +1286,26 @@ h1 {
 
 h2 {
     font-family: 'SofiaPro-extralight';
-    font-size: 40px;
+    font-size: 34px;
 }
 
 h3 {
     font-family: 'SofiaPro-light';
-    font-size: 28px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 h4 {
     font-family: 'SofiaPro-light';
-    font-size: 23px;
+    font-size: 20px;
 }
 
 p {
-    font-size: 22px;
+    font-size: 19px;
     line-height: 1.5;
 }
 
-header {
+.header-home {
     background-image: url(images/img-header-v3-1440.svg);
     background-color: #ffffff;
     background-position: center;
@@ -1327,7 +1327,7 @@ nav {
 
 .menu {
     width: 35%;
-    margin-left: 53%;
+    margin-left: 60%;
 }
 
 .menu-items {
@@ -1474,7 +1474,7 @@ nav {
     position: absolute;
     background-color: #E5BBA5;
     width: 40%;
-    height: 30px;
+    height: 24px;
     bottom: 0;
     left:0;
     z-index: -1;
@@ -1482,13 +1482,12 @@ nav {
 }
 
 .texto-proyecto h4 {
-    margin-top: 2.5%;
+    margin-top: 5%;
     text-transform: uppercase;
 }
 
 .texto-proyecto p {
-    margin-top: 2.5%;
-    font-size: 20px;
+    margin-top: 5%;
 }
 
 .texto-proyecto button {
@@ -1502,7 +1501,7 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     padding: 4%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .texto-proyecto button:hover {
@@ -1534,14 +1533,19 @@ nav {
     background-color: #E5BBA5;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 #about-texto {
-    width: 40%;
+    width: 60%;
     padding: 3%;
     color: #ffffff;
+    margin-left: 8%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
 }
 
 #about-texto h2 {
@@ -1561,7 +1565,9 @@ nav {
 #about-img img{
     width: 90%;
     object-fit: cover;
-    object-position: center; 
+    object-position: center;
+    margin-top: 3%;
+    margin-right: 3%;
 }
 
 .skills {
@@ -1573,7 +1579,7 @@ nav {
 .skills h2 {
     font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 #list-skills {
@@ -1584,7 +1590,6 @@ nav {
 
 #list-skills p {
     margin-top: 3%;
-    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -1670,6 +1675,212 @@ footer {
 #cv a:hover{
     color: #404040;
 }
+
+/* Páginas de proyectos */
+
+.presentacion-proyecto-interior img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-proyecto-interior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ficha-datos-proyecto {
+    width: 30%;
+    background-color: #C27166;
+    padding: 3%;
+    color: #ffffff;
+    margin: 4%;
+}
+
+.ficha-datos-proyecto h3 {
+    text-transform: none;
+    margin-bottom: 2%;
+    font-family: 'SofiaPro-semibold';
+}
+
+.reto-proyecto {
+    width: 60%;
+    margin: 6%;
+    vertical-align: middle;
+}
+
+.reto-proyecto p {
+    font-family: 'SofiaPro-semibold';
+    font-size: 21px;
+}
+
+.desarrollo-proyecto {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.desarrollo-proyecto img {
+    width: 100%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+    object-fit: cover;
+
+}
+
+.desarrollo-proyecto h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.desarrollo-proyecto h2:after {
+    content:'';
+    position: absolute;
+    background-color: #E5BBA5;
+    width: 57%;
+    height: 25px;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.desarrollo-proyecto h2:hover:after {
+    width: 60%;
+    transition: 0.5s ease;
+}
+
+.datos-investigacion-proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+
+.datos-investigacion-proyecto h3 {
+    color: #C27166;
+    text-transform: none;
+    font-family: 'SofiaPro-semibold';
+}
+
+.datos-investigacion-proyecto p {
+    margin-top: 2%;
+}
+
+.dato-investigacion-1 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-2 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.dato-investigacion-3 {
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.definicion-problemas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.problema {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.problema h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+
+}
+
+.problema-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.problema-usabilidad {
+    background-color: #f7f7f7;
+    padding: 4%;
+}
+
+.problema-usabilidad h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+}
+
+.flujos-proyecto img {
+    width: 45%;
+    object-fit: contain;
+}
+
+
+.texto-flujos-proyecto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.texto-flujos-proyecto h4 {
+    font-family: 'SofiaPro-semibold';
+    font-size: 36px;
+    color: #C27166;
+}
+
+.texto-flujos-proyecto p {
+    margin-top: 3%;
+}
+
+#flujos-proyecto-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#flujos-proyecto-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#flujos-proyecto-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-journey-scenario {
+    display: flex;
+    flex-direction: column;
+}
+.user-journey-scenario img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+#user-persona-ahora img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
 }
 
 @media only screen and (min-width:415px) and (max-width:768px){
@@ -1680,25 +1891,25 @@ h1 {
 
 h2 {
     font-family: 'SofiaPro-extralight';
-    font-size: 40px;
+    font-size: 42px;
 }
 
 h3 {
     font-family: 'SofiaPro-light';
-    font-size: 24px;
+    font-size: 30px;
 }
 
 h4 {
     font-family: 'SofiaPro-light';
-    font-size: 22px;
+    font-size: 26px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.6;
 }
 
-header {
+.header-home {
     background-image: url(images/img-header-375.svg);
     background-color: #ffffff;
     background-position: center;
@@ -1751,29 +1962,17 @@ nav {
 }
 
 #cargo {
-    margin-top: 5%;
-    position: relative;
-    z-index: 1;
-}
-
-#cargo h3:after {
-    content:'';
-    position: absolute;
-    background-color: #E5BBA5;
-    width: 80%;
-    height: 17px;
-    bottom: 0;
-    left:0;
-    z-index: -1;
-    opacity: 0.4;
+    margin-top: 6%;
+    text-transform: uppercase;
+    line-height: 1.5;
 }
 
 #presentacion {
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 #presentacion p {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 #rrss {
@@ -1785,7 +1984,7 @@ nav {
 
 #rrss i {
     color: #404040;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 #rrss i:hover {
@@ -1795,7 +1994,7 @@ nav {
 #intro-proyectos {
     width: 100vw;
     background-color: #F0C8B2;
-    padding: 4% 10% 4% 10%;
+    padding: 5% 10% 5% 10%;
     color: #ffffff;
 }
 
@@ -1805,6 +2004,7 @@ nav {
 
 #intro-proyectos p {
     margin-top: 2%;
+    font-size: 26px;
 }
 
 .background-proyectos {
@@ -1852,14 +2052,14 @@ nav {
 
 .texto-proyecto h2 {
     position: relative;
-    font-size: 48px;
+    font-size: 52px;
 }
 
 .texto-proyecto h2:after {
     content:'';
     position: absolute;
     background-color: #E5BBA5;
-    width: 40%;
+    width: 35%;
     height: 30px;
     bottom: 0;
     left:0;
@@ -1868,30 +2068,29 @@ nav {
 }
 
 .texto-proyecto h4 {
-    margin-top: 3%;
+    margin-top: 5%;
     text-transform: uppercase;
     font-size: 30px;
 }
 
 .texto-proyecto p {
-    margin-top: 3%;
-    font-size: 22px;
+    margin-top: 5%;
+    font-size: 26px;
 }
 
 .texto-proyecto button {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     background-color: #C27166;
     border-style: solid;
     border-color: #C27166;
     border-width: 2px;
     font-size: 26px;
-    font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #ffffff;
     padding: 4%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 #treen-button {
@@ -1921,14 +2120,13 @@ nav {
 
 #about-texto {
     width: 100%;
-    padding: 10% 10% 10% 10%; 
+    padding: 10% 10% 5% 10%; 
     color: #ffffff;
 }
 
 #about-texto h2 {
     font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 44px;
 }
 
 #about-texto p {
@@ -1944,6 +2142,8 @@ nav {
     width: 95%;
     object-fit: cover;
     object-position: center; 
+    margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 .skills {
@@ -1955,7 +2155,8 @@ nav {
 .skills h2 {
     font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 26px;
+    font-size: 36px;
+    line-height: 1.5;
 }
 
 #list-skills {
@@ -1966,7 +2167,7 @@ nav {
 
 #list-skills p {
     margin-top: 3%;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
@@ -2048,6 +2249,211 @@ footer {
     font-size: 22px;
 }
 
+/* Páginas de proyectos */
+
+.presentacion-proyecto-interior img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 12%;
+}
+
+.intro-proyecto-interior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ficha-datos-proyecto {
+    width: 35%;
+    background-color: #C27166;
+    padding: 3%;
+    color: #ffffff;
+    margin: 4%;
+}
+
+.ficha-datos-proyecto h3 {
+    text-transform: none;
+    font-size: 28px;
+    margin-bottom: 7%;
+    font-family: 'SofiaPro-semibold';
+}
+
+.reto-proyecto {
+    width: 60%;
+    margin: 4%;
+    vertical-align: middle;
+}
+
+.reto-proyecto p {
+    font-family: 'SofiaPro-semibold';
+    font-size: 19px;
+}
+
+.desarrollo-proyecto {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.desarrollo-proyecto img {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    object-fit: cover;
+
+}
+
+.desarrollo-proyecto h2 {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    position: relative;
+    font-size: 36px;
+}
+
+.desarrollo-proyecto h2:after {
+    content:'';
+    position: absolute;
+    background-color: #E5BBA5;
+    width: 85%;
+    height: 20px;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.datos-investigacion-proyecto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+
+.datos-investigacion-proyecto h3 {
+    color: #C27166;
+    text-transform: none;
+    font-family: 'SofiaPro-semibold';
+    font-size: 26px;
+}
+
+.datos-investigacion-proyecto p {
+    margin-top: 5%;
+}
+
+.dato-investigacion-1 {
+    width: 29%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.dato-investigacion-2 {
+    width: 29%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.dato-investigacion-3 {
+    width: 29%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.definicion-problemas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.problema {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.problema h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+
+}
+
+.problema-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.problema-usabilidad {
+    background-color: #f7f7f7;
+    padding: 4%;
+}
+
+.problema-usabilidad h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+}
+
+.flujos-proyecto img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.texto-flujos-proyecto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.texto-flujos-proyecto h4 {
+    font-family: 'SofiaPro-semibold';
+    font-size: 34px;
+    color: #C27166;
+    margin-top: 5%;
+}
+
+.texto-flujos-proyecto p {
+    margin-top: 3%;
+}
+
+#flujos-proyecto-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#flujos-proyecto-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#flujos-proyecto-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.user-journey-scenario {
+    display: flex;
+    flex-direction: column;
+}
+.user-journey-scenario img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+#user-persona-ahora img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
 }
 
 
@@ -2055,32 +2461,33 @@ footer {
  
 h1 {
     Font-Family: 'SofiaPro-regular';
-    font-size: 35px;
+    font-size: 36px;
+    line-height: 1.2;
 }
 
 h2 {
     font-family: 'SofiaPro-extralight';
-    font-size: 25px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
 h3 {
     font-family: 'SofiaPro-light';
-    font-size: 20px;
+    font-size: 23px;
     text-transform: uppercase;
 }
 
 h4 {
     font-family: 'SofiaPro-light';
-    font-size: 18px;
+    font-size: 19px;
 }
 
 p {
-    font-size: 19px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
-header {
+.header-home {
     background-image: url(images/img-header-375.svg);
     background-color: #ffffff;
     background-position: center;
@@ -2133,20 +2540,7 @@ nav {
 
 #cargo {
     margin-top: 7%;
-    position: relative;
-    z-index: 1;
-}
-
-#cargo h3:after {
-    content:'';
-    position: absolute;
-    background-color: #E5BBA5;
-    width: 100%;
-    height: 50px;
-    bottom: 0;
-    left:0;
-    z-index: -1;
-    opacity: 0.4;
+    line-height: 1.5;
 }
 
 #presentacion {
@@ -2183,10 +2577,12 @@ nav {
 
 #intro-proyectos h2 {
     font-family: 'SofiaPro-medium';
+    text-transform: none;
 }
 
 #intro-proyectos p {
     margin-top: 4%;
+    font-size: 17px;
 }
 
 .background-proyectos {
@@ -2234,14 +2630,14 @@ nav {
 
 .texto-proyecto h2 {
     position: relative;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .texto-proyecto h2:after {
     content:'';
     position: absolute;
     background-color: #E5BBA5;
-    width: 60%;
+    width: 50%;
     height: 25px;
     bottom: 0;
     left:0;
@@ -2250,14 +2646,15 @@ nav {
 }
 
 .texto-proyecto h4 {
-    margin-top: 3%;
+    margin-top: 5%;
     text-transform: uppercase;
     font-size: 22px;
+    line-height: 1.5;
 }
 
 .texto-proyecto p {
-    margin-top: 3%;
-    font-size: 22px;
+    margin-top: 5%;
+    font-size: 19px;
 }
 
 .texto-proyecto button {
@@ -2273,7 +2670,7 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     padding: 7%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 #treen-button {
@@ -2303,19 +2700,18 @@ nav {
 
 #about-texto {
     width: 100%;
-    padding: 10% 10% 10% 10%; 
+    padding: 10% 10% 5% 10%; 
     color: #ffffff;
 }
 
 #about-texto h2 {
     font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 35px;
 }
 
 #about-texto p {
     margin-top: 5%;
-    font-size: 22px; 
+    font-size: 17px; 
 }
 
 #about-img {
@@ -2326,6 +2722,8 @@ nav {
     width: 95%;
     object-fit: cover;
     object-position: center; 
+    margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 .skills {
@@ -2337,7 +2735,8 @@ nav {
 .skills h2 {
     font-family: 'SofiaPro-medium';
     text-transform: none;
-    font-size: 26px;
+    font-size: 25px;
+    line-height: 1.5;
 }
 
 #list-skills {
@@ -2348,7 +2747,7 @@ nav {
 
 #list-skills p {
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
@@ -2380,7 +2779,6 @@ footer {
     font-family: 'SofiaPro-medium';
     text-transform: none;
     color: #ffffff;
-    font-size: 35px; 
 }
 
 .texto {
@@ -2401,7 +2799,7 @@ footer {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .rrss {
@@ -2428,7 +2826,200 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
+}
+
+/* Páginas de proyectos */
+
+.presentacion-proyecto-interior img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-proyecto-interior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha-datos-proyecto {
+    width: 90%;
+    background-color: #C27166;
+    padding: 6%;
+    color: #ffffff;
+    margin: 4%;
+}
+
+.ficha-datos-proyecto h3 {
+    text-transform: none;
+    font-size: 21px;
+    margin-bottom: 3%;
+    font-family: 'SofiaPro-semibold';
+}
+
+.reto-proyecto {
+    width: 90%;
+    margin: 4%;
+    vertical-align: middle;
+}
+
+.reto-proyecto p {
+    font-family: 'SofiaPro-semibold';
+    font-size: 17px;
+}
+
+.desarrollo-proyecto {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.desarrollo-proyecto img {
+    width: 100%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    object-fit: cover;
+
+}
+
+.desarrollo-proyecto h2 {
+    margin-top: 8%;
+    margin-bottom: 2%;
+    position: relative;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+.datos-investigacion-proyecto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin: 0 auto;
+}
+
+.datos-investigacion-proyecto h3 {
+    color: #C27166;
+    text-transform: none;
+    font-family: 'SofiaPro-semibold';
+    font-size: 23px;
+}
+
+.datos-investigacion-proyecto p {
+    margin-top: 3%;
+}
+
+.dato-investigacion-1 {
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.dato-investigacion-2 {
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.dato-investigacion-3 {
+    width: 70%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.definicion-problemas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.problema {
+    background-color: #f7f7f7;
+    width: 95%;
+    padding: 5%;
+    margin-bottom: 2%;
+}
+
+.problema h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+
+}
+
+.problema-1 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.problema-usabilidad {
+    background-color: #f7f7f7;
+    padding: 4%;
+}
+
+.problema-usabilidad h4 {
+    font-family: 'SofiaPro-semibold';
+    margin-bottom: 3%;
+}
+
+.flujos-proyecto img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.texto-flujos-proyecto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.texto-flujos-proyecto h4 {
+    font-family: 'SofiaPro-semibold';
+    font-size: 23px;
+    color: #C27166;
+    margin-top: 5%;
+}
+
+.texto-flujos-proyecto p {
+    margin-top: 3%;
+}
+
+#flujos-proyecto-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#flujos-proyecto-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#flujos-proyecto-3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.user-journey-scenario {
+    display: flex;
+    flex-direction: column;
+}
+.user-journey-scenario img {
+    display: block;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+#user-persona-ahora img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
 
 
